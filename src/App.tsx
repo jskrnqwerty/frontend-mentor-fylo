@@ -1,9 +1,11 @@
-import HeaderBar from "./components/header/header";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <>
-      <HeaderBar />
+      <div className="header">
+        <Header />
+      </div>
     </>
   );
 }
