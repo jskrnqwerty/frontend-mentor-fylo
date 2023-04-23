@@ -1,6 +1,6 @@
 const Header = () => {
-  type navMenuItem = { name: string; link: string };
-  const navMenu: navMenuItem[] = [
+  type navMenuItemType = { name: string; link: string };
+  const navMenu: navMenuItemType[] = [
     { name: "Features", link: "#" },
     { name: "Team", link: "#" },
     { name: "Sign In", link: "#" },
@@ -8,11 +8,13 @@ const Header = () => {
 
   return (
     <>
-      <img
-        src="src/assets/images/logo.svg"
-        alt="logo"
-        className="header_logo"
-      />
+      <a href="/">
+        <img
+          src="src/assets/images/logo.svg"
+          alt="logo"
+          className="header_logo"
+        />
+      </a>
       <div className="header_nav-menu">
         {navMenu.map((item, index) => (
           <a

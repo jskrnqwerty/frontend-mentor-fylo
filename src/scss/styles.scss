@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,32 +12,91 @@ body {
   font-family: fonts.$body-font;
   font-size: fonts.$body-font-size;
   color: colors.$text;
+  text-align: center;
+  
+}
+
+h1 {
+  font-family: fonts.$fancy-font;
+}
+
+p {
+  font-family: fonts.$body-font;
+  // letter-spacing: 0.1rem;
 }
 
 .header {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  // padding: 2rem 4rem;
+  padding: 2rem calc(2vw + 2rem);
   justify-content: space-between;
   
-  // &_logo {
-  // }
-  
-  &_nav-menu {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    
-    &_item {
-      font-family: fonts.$header-font;
-      color: colors.$text;
-      text-decoration: none;
+  &_logo {
+    margin-right: 1.5rem;
+    max-width: 180px;
+    width: calc(5vw + 100px)
     }
-
-    &_item:hover {
-      text-decoration: underline;
-      font-weight: 700;
-      cursor: pointer;
+  
+    &_nav-menu {
+      display: flex;
+      gap: calc(4vw + 0.5rem);
+      // gap: 4rem;
+      justify-content: space-between;
+      
+      &_item {
+        font-family: fonts.$fancy-font;
+        color: colors.$text;
+        text-decoration: none;
+      }
+      
+      &_item:hover {
+        text-decoration: underline;
+        font-weight: 700;
+        cursor: pointer;
+      }
     }
   }
+
+  .intro-image {
+    max-width: 725px;
+    width: 90vw;
+  }
+  
+  .intro-container {  
+    // max-width: calc (100vw - 10rem);
+    max-width: 800px;
+    width: 90vw;
+    margin: auto;
+    
+    .heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding: 2rem 0;
+  }
+  
+  .text {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    // padding-bottom: 2rem;
+  }
+  
+  .get-started {
+    // width: 250px;
+    padding: 1rem 6rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    color: colors.$text;
+    background-color: colors.$blue;
+    margin: 2rem 0;
+  }
+  
+  .get-started:hover {
+    background-color: colors.$cyan;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
 }
