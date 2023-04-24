@@ -35,7 +35,7 @@ const Features = () => {
             alt="icon-access-anywhere"
             className="features_item_icon"
           />
-          <h4 className="features_item_heading">{item.heading}</h4>
+          <h2 className="features_item_heading">{item.heading}</h2>
           <p className="features_item_text">{item.text}</p>
         </div>
       ))}

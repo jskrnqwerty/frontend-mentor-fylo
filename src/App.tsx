@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Features from "./components/Features";
 import Intro from "./components/Intro";
+import Explanation from "./components/Explanation";
 
 function App() {
   return (
@@ -14,17 +15,11 @@ function App() {
       <div className="features">
         <Features />
       </div>
+      <div className="explanation">
+        <Explanation />
+      </div>
 
       <p>
-        Stay productive, wherever you are
-        <br />
-        Never let location be an issue when accessing your files. Fylo has you
-        covered for all of your file storage needs.
-        <br />
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required.
-        <br />
-        See how Fylo works
         <br />
         Fylo has improved our team productivity by an order of magnitude. Since
         making the switch our team has become a well-oiled collaboration
