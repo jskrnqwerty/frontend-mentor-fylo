@@ -13,15 +13,16 @@ body {
   font-size: fonts.$body-font-size;
   color: colors.$text;
   text-align: center;
-  
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: fonts.$fancy-font;
+  font-weight: 700;
 }
 
 p {
   font-family: fonts.$body-font;
+  font-weight: 400;
   // letter-spacing: 0.1rem;
 }
 
@@ -38,52 +39,55 @@ p {
     width: calc(5vw + 100px)
     }
   
-    &_nav-menu {
-      display: flex;
-      gap: calc(4vw + 0.5rem);
-      // gap: 4rem;
-      justify-content: space-between;
-      
-      &_item {
-        font-family: fonts.$fancy-font;
-        color: colors.$text;
-        text-decoration: none;
-      }
-      
-      &_item:hover {
-        text-decoration: underline;
-        font-weight: 700;
-        cursor: pointer;
-      }
+  &_nav-menu {
+    display: flex;
+    gap: calc(4vw + 0.5rem);
+    // gap: 4rem;
+    justify-content: space-between;
+    
+    &_item {
+      font-family: fonts.$fancy-font;
+      color: colors.$text;
+      text-decoration: none;
+    }
+    
+    &_item:hover {
+      text-decoration: underline;
+      font-weight: 700;
+      cursor: pointer;
     }
   }
+}
 
-  .intro-image {
+
+.intro {  
+  // max-width: calc (100vw - 10rem);
+  max-width: 800px;
+  width: 90vw;
+  margin: auto;
+  
+  &_image {
     max-width: 725px;
     width: 90vw;
   }
   
-  .intro-container {  
-    // max-width: calc (100vw - 10rem);
-    max-width: 800px;
-    width: 90vw;
-    margin: auto;
-    
-    .heading {
-    font-size: 2.5rem;
+  &_heading {
+    // font-size: 2.5rem;
+    font-size: calc(0.4vw + 2rem);
     line-height: 3.5rem;
-    padding: 2rem 0;
+    padding: 2rem calc(2vw + 0.5rem);
   }
-  
-  .text {
-    max-width: 600px;
+
+  &_text {
+    max-width: 700px;
     margin: auto;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    // padding-bottom: 2rem;
+    // padding: 0 6.5rem;
+    padding: 0 calc(2vw + 1rem);
   }
-  
-  .get-started {
+
+  &_get-started {
     // width: 250px;
     padding: 1rem 6rem;
     border-radius: 100px;
@@ -92,11 +96,42 @@ p {
     background-color: colors.$blue;
     margin: 2rem 0;
   }
-  
-  .get-started:hover {
+
+  &_get-started:hover {
     background-color: colors.$cyan;
     transition: all 0.3s ease;
     cursor: pointer;
   }
+}
 
+
+.features {
+  margin: 8em auto;
+  max-width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8em;
+  justify-items: center;
+
+  &_item {
+    max-width: 350px;
+    // width: 
+
+    
+    &_icon {
+      height: 60px;
+      margin-bottom: 1.5em;
+      
+    }
+    
+    &_heading {
+      padding-bottom: 0.5rem;
+      
+    }
+    
+    &_text {
+      font-size: 0.8rem;
+      
+    }
+  }
 }

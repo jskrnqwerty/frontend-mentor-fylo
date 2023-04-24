@@ -1,4 +1,6 @@
-import Header from "./components/header/header";
+import Header from "./components/Header";
+import Features from "./components/Features";
+import Intro from "./components/Intro";
 
 function App() {
   return (
@@ -6,45 +8,14 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      <div className="intro-container">
-        <img
-          src="src/assets/images/illustration-intro.png"
-          alt="intro-image"
-          className="intro-image"
-        />
-        <h1 className="heading">
-          All your files in one secure location, accessible anywhere.
-        </h1>
-        <p className="text">
-          Fylo stores all your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends
-          family, and co-workers.
-        </p>
-        <button className="get-started"> Get Started</button>
+      <div className="intro">
+        <Intro />
+      </div>
+      <div className="features">
+        <Features />
       </div>
 
       <p>
-        <br />
-        Access your files, anywhere
-        <br />
-        The ability to use a smartphone, tablet, or computer to access your
-        account means your files follow you everywhere.
-        <br />
-        Security you can trust
-        <br />
-        2-factor authentication and user-controlled encryption are just a couple
-        of the security features we allow to help secure your files.
-        <br />
-        Real-time collaboration
-        <br />
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required.
-        <br />
-        Store any type of file
-        <br />
-        Whether you're sharing holidays photos or work documents, Fylo has you
-        covered allowing for all file types to be securely stored and shared.
-        <br />
         Stay productive, wherever you are
         <br />
         Never let location be an issue when accessing your files. Fylo has you
