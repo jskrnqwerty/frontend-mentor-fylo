@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Explanation from "./components/Explanation";
 import Testimonials from "./components/Testimonials";
 import EarlyAccess from "./components/EarlyAccess";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
       </div>
       <div className="early-access">
         <EarlyAccess />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
 
       <p>

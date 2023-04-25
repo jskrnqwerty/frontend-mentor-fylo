@@ -8,10 +8,15 @@ const EarlyAccess = () => {
         help you.
       </p>
       <form className="early-access_form">
-        <input
-          placeholder="email@example.com"
-          className="early-access_form_input"
-        ></input>
+        <div className="early-access_form_input">
+          <input
+            placeholder="email@example.com"
+            className="early-access_form_input_field"
+          ></input>
+          <p className="early-access_form_input_error">
+            Please enter a valid email address
+          </p>
+        </div>
         <button className="early-access_form_button">
           Get Started For Free
         </button>
