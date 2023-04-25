@@ -58,6 +58,10 @@ p {
   background-color: hsl(217, 28%, 15%);
   margin: auto;
   padding-bottom: calc(2vh + 12em);
+  background-image: url("../assets/images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
 }
 .intro_image {
   max-width: 725px;
@@ -65,7 +69,9 @@ p {
 }
 .intro_heading {
   line-height: 3.5rem;
-  padding: 2rem calc(2vw + 0.5rem);
+  padding: 2rem calc(2vw + 0rem);
+  max-width: 800px;
+  margin: auto;
 }
 .intro_text {
   max-width: 700px;

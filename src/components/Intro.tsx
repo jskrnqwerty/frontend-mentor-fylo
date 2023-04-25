@@ -15,6 +15,11 @@ const Intro = () => {
         co-workers.
       </p>
       <button className="intro_get-started"> Get Started</button>
+      <img
+        src=""
+        alt=""
+        className="intro_bg-mountains"
+      />
     </>
   );
 };

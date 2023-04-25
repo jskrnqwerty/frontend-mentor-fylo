@@ -67,13 +67,19 @@ p {
   // width: 90vw;
   margin: auto;
   padding-bottom: $block-bottom-margin;
+  background-image: url("../assets/images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
   &_image {
     max-width: 725px;
     width: 90vw;
   }
   &_heading {
     line-height: 3.5rem;
-    padding: 2rem calc(2vw + 0.5rem);
+    padding: 2rem calc(2vw + 0rem);
+    max-width: 800px;
+    margin: auto;
   }
   &_text {
     max-width: 700px;
@@ -235,7 +241,6 @@ p {
         width: 80vw;
       }
     }
-    
     &_info {
       padding-left: calc(1vw + 0.25em);
       max-width: 100%;
