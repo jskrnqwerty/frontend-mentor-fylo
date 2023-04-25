@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Explanation from "./components/Explanation";
 import Testimonials from "./components/Testimonials";
+import EarlyAccess from "./components/EarlyAccess";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <div className="testimonials">
         <Testimonials />
       </div>
+      <div className="early-access">
+        <EarlyAccess />
+      </div>
 
       <p>
         <br />
@@ -31,16 +35,6 @@ function App() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        Get early access today
-        <br />
-        It only takes a minute to sign up and our free starter tier is extremely
-        generous. If you have any questions, our support team would be happy to
-        help you.
-        <br />
-        Get Started For Free
         <br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua

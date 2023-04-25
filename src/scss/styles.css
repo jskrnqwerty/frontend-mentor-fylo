@@ -26,6 +26,20 @@ p {
   font-weight: 400;
 }
 
+.early-access_form_button, .intro_get-started {
+  padding: 1rem 6rem;
+  border-radius: 100px;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(198, 60%, 50%);
+}
+
+.early-access_form_button:hover, .intro_get-started:hover {
+  background-color: hsl(176, 68%, 64%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .header {
   background-color: hsl(217, 28%, 15%);
   display: flex;
@@ -81,19 +95,8 @@ p {
   padding: 0 calc(2vw + 1rem);
 }
 .intro_get-started {
-  padding: 1rem 6rem;
-  border-radius: 100px;
-  font-size: 1.1rem;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(198, 60%, 50%);
   margin: 2rem 0;
 }
-.intro_get-started:hover {
-  background-color: hsl(176, 68%, 64%);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
 .features {
   margin: auto;
   margin-bottom: calc(2vh + 12em - 3em);
@@ -223,6 +226,7 @@ p {
   gap: 3em;
   text-align: left;
   position: relative;
+  margin-bottom: calc(2vh + 12em);
 }
 .testimonials_quotes-icon {
   position: absolute;
@@ -258,4 +262,47 @@ p {
 .testimonials_card_author_designation {
   font-size: 0.5rem;
   letter-spacing: 0.05rem;
+}
+
+.early-access {
+  background-color: hsl(217, 28%, 15%);
+  max-width: 800px;
+  width: 80vw;
+  margin: auto;
+  padding: 3em 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 1px hsl(216, 53%, 9%);
+}
+.early-access_heading {
+  font-size: 2rem;
+}
+.early-access_text {
+  padding: 2em 4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.3rem;
+}
+.early-access_form {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.early-access_form_input {
+  max-width: 35em;
+  width: 35vw;
+  padding: 1.2em 3em;
+  border-radius: 50px;
+}
+.early-access_form_input::-moz-placeholder {
+  color: lightgray;
+}
+.early-access_form_input::placeholder {
+  color: lightgray;
+}
+.early-access_form_button {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=styles.css.map */

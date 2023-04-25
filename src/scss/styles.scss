@@ -28,6 +28,22 @@ p {
   font-weight: 400;
 }
 
+%button {
+  padding: 1rem 6rem;
+  border-radius: 100px;
+  font-size: 1rem;
+  color: $text-color;
+  background-color: $blue;
+  // margin: 2rem 0;
+}
+%button-hover {
+  background-color: $cyan;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+
 
 .header {
   background-color: $intro-bg;
@@ -90,18 +106,13 @@ p {
     padding: 0 calc(2vw + 1rem);
   }
   &_get-started {
-    // width: 250px;
-    padding: 1rem 6rem;
-    border-radius: 100px;
-    font-size: 1.1rem;
-    color: $text-color;
-    background-color: $blue;
+    @extend %button;
     margin: 2rem 0;
+
   }
   &_get-started:hover {
-    background-color: $cyan;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    @extend %button-hover;
+
   }
 }
 
@@ -272,6 +283,7 @@ p {
   gap: 3em;
   text-align: left;
   position: relative;  
+  margin-bottom: $block-bottom-margin;
   &_quotes-icon {
     position: absolute;
     z-index: 1;
@@ -312,3 +324,48 @@ p {
   }
 }
 
+
+.early-access {
+  background-color: $intro-bg;
+  max-width: 800px;
+  width: 80vw;
+  margin: auto;
+  padding: 3em 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 1px $footer-bg;
+  &_heading {
+    font-size: 2rem;
+  }
+  &_text {
+    padding: 2em 4rem;
+    font-size: $text-size-8;
+    letter-spacing: 0.05rem;
+    line-height: 1.3rem;
+  }
+  &_form {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+
+    &_input {
+      max-width: 35em;
+      width: 35vw;
+      padding: 1.2em 3em;
+      border-radius: 50px;
+    }
+    &_input::placeholder {
+      color: lightgray;
+    }
+    &_button {
+      @extend %button;
+      padding-right: 2rem; 
+      padding-left: 2rem; 
+      font-size: 0.9rem;
+    }
+    &_button:hover {
+      @extend %button-hover;
+    }
+  }
+}
