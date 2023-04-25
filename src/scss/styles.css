@@ -27,6 +27,7 @@ p {
 }
 
 .header {
+  background-color: hsl(217, 28%, 15%);
   display: flex;
   align-items: center;
   padding: 7em calc(4vw + 2rem);
@@ -54,10 +55,9 @@ p {
 }
 
 .intro {
-  max-width: 900px;
-  width: 90vw;
+  background-color: hsl(217, 28%, 15%);
   margin: auto;
-  margin-bottom: calc(2vh + 12em);
+  padding-bottom: calc(2vh + 12em);
 }
 .intro_image {
   max-width: 725px;
@@ -123,6 +123,7 @@ p {
   }
   .features_item {
     max-width: 100%;
+    padding: 1em;
   }
 }
 
@@ -207,4 +208,48 @@ p {
   .explanation_info_how-fylo-works_text {
     font-size: 1.2rem;
   }
+}
+
+.testimonials {
+  max-width: calc(90vw - 150px);
+  margin: auto;
+  display: flex;
+  gap: 3em;
+  text-align: left;
+  position: relative;
+}
+.testimonials_quotes-icon {
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  left: -10px;
+}
+.testimonials_card {
+  z-index: 2;
+  background-color: hsl(219, 30%, 18%);
+  padding: 3em 2em;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px 1px hsl(217, 28%, 15%);
+}
+.testimonials_card_statement {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.3rem;
+}
+.testimonials_card_author_photo {
+  width: 1.8rem;
+  float: left;
+  margin-right: 0.6em;
+  border-radius: 50%;
+}
+.testimonials_card_author_name {
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.03rem;
+}
+.testimonials_card_author_designation {
+  font-size: 0.5rem;
+  letter-spacing: 0.05rem;
 }/*# sourceMappingURL=styles.css.map */

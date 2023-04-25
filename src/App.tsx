@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Explanation from "./components/Explanation";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -18,32 +19,20 @@ function App() {
       <div className="explanation">
         <Explanation />
       </div>
+      <div className="testimonials">
+        <Testimonials />
+      </div>
 
       <p>
         <br />
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration
-        machine.
         <br />
-        Satish Patel
         <br />
-        Founder & CEO, Huddle
         <br />
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration
-        machine.
         <br />
-        Bruce McKenzie
         <br />
-        Founder & CEO, Huddle
         <br />
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration
-        machine.
         <br />
-        Iva Boyd
         <br />
-        Founder & CEO, Huddle
         <br />
         Get early access today
         <br />
