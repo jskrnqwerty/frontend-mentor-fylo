@@ -65,39 +65,47 @@ $explanation-text-size: $text-size-8 + 0.15rem;
   @media screen and (max-width: 1039px) {
     display: flex;
     flex-direction: column;
-    max-width: $mobile-max-width;
+    max-width: 90vw;
+    margin-bottom: calc($block-bottom-margin + 11em);
+
 
     &_image {
-      margin-bottom: 4rem;
+      margin-bottom: 7em;
       padding-right: 0;
 
       &_img {
-        max-width: 500px;
-        width: 80vw;
+        max-width: 600px;
+        width: $mobile-max-width;
       }
     }
     &_info {
       padding-left: calc(1vw + 0.25em);
       max-width: 100%;
-      width: 90%;
+      width: 95%;
 
       &_heading {
-        font-size: $mobile-heading-size;
+        font-size: $mobile-subheading-size;
         max-width: 100%;
       }
 
       &_text {
+        // font-size: $mobile-text-size;
+        // margin: 0.7rem 0;
         font-size: $mobile-text-size;
-        margin: 0.7rem 0;
+        line-height: 2.5rem;
+        line-height: $mobile-text-line-height;
       }
 
       &_how-fylo-works {
 
         &_text {
-          font-size: $mobile-text-size;
-        }
-        
-        &_arrow-icon {
+          font-size: $mobile-text-size - 0.3rem;
+          padding-bottom: 0.7em;
+
+          
+          &_arrow-icon {
+            width: $mobile-text-size;
+          }
         }
       }
     }
