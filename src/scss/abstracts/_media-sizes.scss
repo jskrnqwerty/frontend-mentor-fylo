@@ -1,9 +1,11 @@
+$mobile-screen: 765px;
+
 $body-font-size: 14px;
 
 // Destop sizes
 $heading-size: 0rem;
 $text-size-8: 0.8rem;
-// $text-size-95: 0.95rem;
+$menu-text-size: 0.9rem;
 
 $max-width-px: 900px;
 $max-width-vw: 90vw;
@@ -11,7 +13,8 @@ $block-bottom-margin: calc(2vh + 12em);
 
 // Mobile sizes
 $mobile-heading-size: 1.5rem;
-$mobile-text-size: $text-size-8 + 0.4rem;;
+$mobile-text-size: $text-size-8 + 0.4rem;
+$mobile-menu-text-size: 0;
 $mobile-max-width: 80vw;
 $mobile-width: 0vw;
 

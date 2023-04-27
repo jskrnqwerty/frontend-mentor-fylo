@@ -11,7 +11,7 @@
 
   &_image {
     max-width: 725px;
-    width: 90vw;
+    width: calc(90vw - 80px);
   }
 
   &_heading {
@@ -36,5 +36,9 @@
 
   &_get-started:hover {
     @extend %button-hover;
+  }
+
+  @media screen and (max-width: $mobile-screen) {
+
   }
 }
