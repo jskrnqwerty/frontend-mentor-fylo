@@ -1,0 +1,40 @@
+@use "../abstracts/" as *;
+
+.intro {  
+  background-color: $intro-bg;
+  margin: auto;
+  padding-bottom: $block-bottom-margin;
+  background-image: url("../assets/images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
+
+  &_image {
+    max-width: 725px;
+    width: 90vw;
+  }
+
+  &_heading {
+    line-height: 3.5rem;
+    padding: 2rem calc(2vw + 0rem);
+    max-width: 800px;
+    margin: auto;
+  }
+
+  &_text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 0 calc(2vw + 1rem);
+  }
+
+  &_get-started {
+    @extend %button;
+    margin: 2rem 0;
+  }
+
+  &_get-started:hover {
+    @extend %button-hover;
+  }
+}

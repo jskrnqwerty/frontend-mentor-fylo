@@ -1,0 +1,92 @@
+@use "../abstracts/" as *;
+
+
+.footer {
+  @extend %header-footer-padding;
+  background-color: $footer-bg;
+  text-align: left;
+
+  &_logo {
+    margin-bottom: 2em;
+
+  }
+  &_info {
+    display: flex;
+    justify-content: space-between;
+
+    %footer-item-margin {
+      margin-bottom: 1em;
+    }
+
+    .icon {
+      float: left;
+      margin-right: 2em;
+      align-self: start;
+      margin-top: 0.2rem;
+    }
+
+    .text {
+      display: inline;
+      @extend %medium-text;
+    }
+
+    &_address {
+      display: flex;
+      max-width: 25vw;
+      .icon {
+      }
+      .text {
+      }
+    }
+
+    &_contact {
+
+      &_phone {
+        @extend %footer-item-margin;
+        .icon {
+        }
+        .text {
+        }
+      }
+
+      &_email {
+        .icon {
+        }
+        .text {
+        }
+      }
+    }
+
+    &_quick-links-1, &_quick-links-2 {
+      ul {
+        @extend %medium-text;
+        list-style: none;
+        text-align: left;
+        li {
+          @extend %footer-item-margin;
+
+          a {
+            text-decoration: none;
+            color: $text-color;
+          }
+        }
+        li:hover {
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_social-icons {
+
+      img {
+        width: 30px;
+      }
+      
+      .twitter-icon {
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+
+.testimonials {
+  max-width: calc($max-width-vw - 150px);
+  margin: auto;
+  display: flex;
+  gap: 3em;
+  text-align: left;
+  position: relative;  
+  margin-bottom: $block-bottom-margin;
+
+  &_quotes-icon {
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+    left: -10px;
+  }
+
+  &_card {
+    z-index: 2;
+    background-color: $testimonial-bg;
+    padding: 3em 2em;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px 1px $intro-bg;
+
+    &_statement {
+      margin-bottom: 2rem;
+      font-size: $text-size-8;
+      letter-spacing: 0.05rem;
+      line-height: 1.3rem;
+    }
+
+    &_author {
+
+      &_photo {
+        width: 1.8rem;
+        float: left;
+        margin-right: 0.6em;
+        border-radius: 50%;
+      }
+
+      &_name {
+        font-weight: 700;
+        padding-bottom: 0.2rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.03rem;
+      }
+
+      &_designation {
+        font-size: 0.5rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+}

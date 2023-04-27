@@ -1,0 +1,105 @@
+@use "../abstracts/" as *;
+
+$grid-item-width: 90vw;
+$grid-content-width: calc(20vw + 300px);
+$explanation-text-size: $text-size-8 + 0.15rem;
+
+.explanation {
+  display: grid;
+  grid-template-columns: repeat(2, calc(25%));
+  align-items: center;
+  justify-content: center;
+  max-width: 95vw;
+  margin: auto;
+  margin-bottom: calc($block-bottom-margin - 3em);
+
+  &_image {
+    justify-self: right;
+
+    &_img {
+      max-width: $grid-item-width;
+      width: $grid-content-width;
+    }
+  }
+
+  &_info {
+    padding-left: calc(1vw + 2em);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: $grid-content-width;
+    width: calc($grid-content-width - 1vw);
+
+    &_heading {
+      max-width: 20rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    &_text {
+      @extend %medium-text;      
+      margin: 0.7rem 0;
+    }
+
+    &_how-fylo-works {
+      text-decoration: none;
+      margin-top: 0.5rem;
+
+      &_text {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        color: $cyan;
+        text-decoration: none;
+        border-bottom: 1px solid $cyan;
+        padding-bottom: 0.2em;
+        font-size: $explanation-text-size;
+
+        &_arrow-icon {
+          margin-left: 0.5rem;
+          margin-top: 0.1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1039px) {
+    display: flex;
+    flex-direction: column;
+    max-width: $mobile-max-width;
+
+    &_image {
+      margin-bottom: 4rem;
+      padding-right: 0;
+
+      &_img {
+        max-width: 500px;
+        width: 80vw;
+      }
+    }
+    &_info {
+      padding-left: calc(1vw + 0.25em);
+      max-width: 100%;
+      width: 90%;
+
+      &_heading {
+        font-size: $mobile-heading-size;
+        max-width: 100%;
+      }
+
+      &_text {
+        font-size: $mobile-text-size;
+        margin: 0.7rem 0;
+      }
+
+      &_how-fylo-works {
+
+        &_text {
+          font-size: $mobile-text-size;
+        }
+        
+        &_arrow-icon {
+        }
+      }
+    }
+  }
+}
