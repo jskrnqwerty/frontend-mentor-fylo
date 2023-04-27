@@ -13,6 +13,7 @@ $block-bottom-margin: calc(2vh + 12em);
 
 // Mobile sizes
 $mobile-heading-size: 3rem;
+$mobile-subheading-size: $mobile-heading-size - 0.8rem;
 $mobile-text-size: $text-size-8 + 0.95rem;
 $mobile-text-line-height: 2.5rem;
 $mobile-menu-text-size: 0;

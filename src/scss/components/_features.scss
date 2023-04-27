@@ -37,6 +37,7 @@
   
   @media screen and (max-width: $mobile-screen) {
     grid-template-columns: 1fr;
+    gap: 12em;
     // margin: auto;
     // margin-bottom: calc($block-bottom-margin - 3em);
     // text-align: center;
@@ -49,16 +50,20 @@
     // justify-items: center;
     
     &_item {
-      max-width: $mobile-max-width ;
+      // max-width: $mobile-max-width ;
+      max-width: 98%;
       &_icon {
         height: 120px;
-        // margin-bottom: 1.5em;
+        margin-bottom: 5em;
       }
       &_heading {
-        // padding-bottom: 0.5rem;
+        font-size: $mobile-subheading-size;
+        padding-bottom: 0.5rem;
       }
       &_text {
-        // font-size: 0.8rem;
+        font-size: $mobile-text-size;
+        line-height: 2.5rem;
+        line-height: $mobile-text-line-height;
       }
     }
   }

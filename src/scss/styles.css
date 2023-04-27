@@ -182,12 +182,23 @@
 @media screen and (max-width: 765px) {
   .features {
     grid-template-columns: 1fr;
+    gap: 12em;
   }
   .features_item {
-    max-width: 80vw;
+    max-width: 98%;
   }
   .features_item_icon {
     height: 120px;
+    margin-bottom: 5em;
+  }
+  .features_item_heading {
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+  }
+  .features_item_text {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -316,10 +327,10 @@
   }
   .intro_text {
     font-size: 1.75rem;
+    line-height: 2.5rem;
+    line-height: 2.5rem;
     padding: 1.5em 2.6em;
-    line-height: 2.5rem;
     max-width: 100%;
-    line-height: 2.5rem;
   }
   .intro_get-started {
     font-size: 1.7rem;
