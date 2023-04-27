@@ -24,46 +24,13 @@ function App() {
       <div className="testimonials">
         <Testimonials />
       </div>
-      <div className="early-access">
+      <div className="early-access-block">
         <EarlyAccess />
       </div>
       <div className="footer">
         <Footer />
       </div>
-
-      <p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
-        <br />
-        +1-543-123-4567
-        <br />
-        example@fylo.com
-        <br />
-        About Us
-        <br />
-        Jobs
-        <br />
-        Press
-        <br />
-        Blog
-        <br />
-        Contact Us
-        <br />
-        Terms
-        <br />
-        Privacy
-        <br />
-      </p>
-
-      <footer>
+      {/* <footer>
         <p className="attribution">
           Challenge by{" "}
           <a
@@ -74,7 +41,7 @@ function App() {
           </a>
           . Coded by <a href="#">Jaskaran</a>.
         </p>
-      </footer>
+      </footer> */}
     </>
   );
 }

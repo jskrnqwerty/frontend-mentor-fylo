@@ -42,15 +42,22 @@ p {
   cursor: pointer;
 }
 
+%header-footer-padding {
+  padding: 7em calc(4vw + 2rem);
+}
 
-
+%medium-text {
+  font-size: $explanation-text-size;
+  line-height: 1.4rem;
+  // margin: 0.7rem 0;
+}
 
 .header {
   background-color: $intro-bg;
   display: flex;
   align-items: center;
+  @extend %header-footer-padding;
   // padding: 2rem 4rem;
-  padding: 7em calc(4vw + 2rem);
   justify-content: space-between;
   &_logo {
     margin-right: 1.5em;
@@ -183,8 +190,6 @@ p {
 
 
 .explanation {
-  // $grid-item-width: 500px;
-  // $grid-content-width: calc(15vw + 300px);
   $grid-item-width: 90vw;
   $grid-content-width: calc(20vw + 300px);
   $explanation-text-size: $text-size-8 + 0.15rem;
@@ -216,8 +221,7 @@ p {
       // font-size: 1rem;
     }
     &_text {
-      font-size: $explanation-text-size;
-      line-height: 1.4rem;
+      @extend %medium-text;      
       margin: 0.7rem 0;
     }
     &_how-fylo-works {
@@ -324,48 +328,149 @@ p {
   }
 }
 
+.early-access-block {
+  background-image: linear-gradient($main-bg 60%, $footer-bg 40%);
 
-.early-access {
-  background-color: $intro-bg;
-  max-width: 800px;
-  width: 80vw;
-  margin: auto;
-  padding: 3em 0;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px 1px $footer-bg;
-  &_heading {
-    font-size: 2rem;
+  .early-access {
+    background-color: $intro-bg;
+    max-width: 870px;
+    width: 80vw;
+    margin: auto;
+    padding: 3em 0 ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 1px $footer-bg;
+
+    &_heading {
+      font-size: 2rem;
+    }
+    &_text {
+      padding: 2em 4rem;
+      font-size: $text-size-8;
+      letter-spacing: 0.05rem;
+      line-height: 1.3rem;
+    }
+    &_form {
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      padding-right: 0.5em;
+      padding-left: 0.5em;
+
+      &_input {
+        &_field {
+          max-width: 36em;
+          width: 35vw;
+          padding: 1.2em 3em;
+          border-radius: 50px;
+        }
+        &_field::placeholder {
+          color: lightgray;
+        }
+        &_error {
+          position: absolute;
+          font-size: $text-size-8;
+          color: $error;
+          text-align: left;
+          margin-top: 0.1rem;
+          margin-left: 3em;
+        }
+      }
+      &_button {
+        @extend %button;
+        padding-right: 2rem; 
+        padding-left: 2rem; 
+        font-size: 0.9rem;
+      }
+      &_button:hover {
+        @extend %button-hover;
+      }
+    }
   }
-  &_text {
-    padding: 2em 4rem;
-    font-size: $text-size-8;
-    letter-spacing: 0.05rem;
-    line-height: 1.3rem;
+}
+
+.footer {
+  background-color: $footer-bg;
+  text-align: left;
+  // margin-top: -10em;
+  @extend %header-footer-padding;
+
+  &_logo {
+    margin-bottom: 2em;
+
   }
-  &_form {
+  &_info {
     display: flex;
-    justify-content: center;
-    gap: 2em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    justify-content: space-between;
 
-    &_input {
-      max-width: 35em;
-      width: 35vw;
-      padding: 1.2em 3em;
-      border-radius: 50px;
+    %text {
     }
-    &_input::placeholder {
-      color: lightgray;
+    %footer-item-margin {
+      margin-bottom: 1em;
     }
-    &_button {
-      @extend %button;
-      padding-right: 2rem; 
-      padding-left: 2rem; 
-      font-size: 0.9rem;
+
+    .icon {
+      float: left;
+      margin-right: 2em;
+      align-self: start;
+      margin-top: 0.2rem;
     }
-    &_button:hover {
-      @extend %button-hover;
+
+    .text {
+      display: inline;
+      @extend %medium-text;
+    }
+
+    &_address {
+      display: flex;
+      max-width: 25vw;
+      .icon {
+      }
+      .text {
+      }
+    }
+
+    &_contact {
+      &_phone {
+        @extend %footer-item-margin;
+        .icon {
+        }
+        .text {
+        }
+      }
+      &_email {
+        .icon {
+        }
+        .text {
+        }
+      }
+    }
+    &_quick-links-1, &_quick-links-2 {
+      ul {
+        @extend %medium-text;
+        list-style: none;
+        text-align: left;
+        li {
+          @extend %footer-item-margin;
+
+          a {
+            text-decoration: none;
+            color: $text-color;
+          }
+        }
+        li:hover {
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+    &_social-icons {
+      img {
+        width: 30px;
+      }
+      .twitter-icon {
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+      }
     }
   }
 }
