@@ -12,8 +12,9 @@ $max-width-vw: 90vw;
 $block-bottom-margin: calc(2vh + 12em);
 
 // Mobile sizes
-$mobile-heading-size: 1.5rem;
-$mobile-text-size: $text-size-8 + 0.4rem;
+$mobile-heading-size: 3rem;
+$mobile-text-size: $text-size-8 + 0.95rem;
+$mobile-text-line-height: 2.5rem;
 $mobile-menu-text-size: 0;
 $mobile-max-width: 80vw;
 $mobile-width: 0vw;

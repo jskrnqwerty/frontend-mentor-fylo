@@ -39,6 +39,50 @@
   }
 
   @media screen and (max-width: $mobile-screen) {
+    // background-color: $intro-bg;
+    // margin: auto;
+    padding-bottom: calc($block-bottom-margin + 5em);
+    // background-image: url("../assets/images/bg-curvy-desktop.svg");
+    // background-repeat: no-repeat;
+    // background-position-y: bottom;
+    // background-size: contain;
+
+    &_image {
+      // max-width: 725px;
+      // width: calc(90vw - 80px);
+    }
+
+    &_heading {
+      font-size: $mobile-heading-size;
+      padding: 1.5em 1em 0;
+      max-width: 100%;
+      // line-height: 3.5rem;
+      // padding: 2rem calc(2vw + 0rem);
+      // margin: auto;
+    }
+    
+    &_text {
+      font-size: $mobile-text-size;
+      padding: 1.5em 2.6em;
+      line-height: 2.5rem;
+      max-width: 100%;
+      line-height: $mobile-text-line-height;
+      // margin: auto;
+      // font-size: 1.2rem;
+      // padding: 0 calc(2vw + 1rem);
+    }
+
+    &_get-started {
+      font-size: 1.7rem;
+      font-weight: 700;
+      padding: 2rem;
+      width: 60%;
+      // margin: 2rem 0;
+    }
+
+    &_get-started:hover {
+      // @extend %mobile-button-hover;
+    }
 
   }
 }

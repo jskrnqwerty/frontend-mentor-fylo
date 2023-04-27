@@ -141,15 +141,15 @@
     width: 90%;
   }
   .explanation_info_heading {
-    font-size: 1.5rem;
+    font-size: 3rem;
     max-width: 100%;
   }
   .explanation_info_text {
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     margin: 0.7rem 0;
   }
   .explanation_info_how-fylo-works_text {
-    font-size: 1.2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -179,16 +179,15 @@
 .features_item_text {
   font-size: 0.8rem;
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 765px) {
   .features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80vw;
+    grid-template-columns: 1fr;
   }
   .features_item {
-    max-width: 100%;
-    padding: 1em;
+    max-width: 80vw;
+  }
+  .features_item_icon {
+    height: 120px;
   }
 }
 
@@ -306,6 +305,30 @@
 .intro_get-started {
   margin: 2rem 0;
 }
+@media screen and (max-width: 765px) {
+  .intro {
+    padding-bottom: calc(2vh + 12em + 5em);
+  }
+  .intro_heading {
+    font-size: 3rem;
+    padding: 1.5em 1em 0;
+    max-width: 100%;
+  }
+  .intro_text {
+    font-size: 1.75rem;
+    padding: 1.5em 2.6em;
+    line-height: 2.5rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+  }
+  .intro_get-started {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 2rem;
+    width: 60%;
+  }
+}
+
 .testimonials {
   max-width: calc(90vw - 150px);
   margin: auto;
