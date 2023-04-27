@@ -1,8 +1,6 @@
 @use "media-sizes" as *;
 @use "colors" as *;
 
-// $text-color: hsl(0, 0%, 100%);
-
 %button {
   padding: 1rem 6rem;
   border-radius: 100px;
@@ -21,5 +19,4 @@
 %medium-text {
   font-size: $explanation-text-size;
   line-height: 1.4rem;
-  // margin: 0.7rem 0;
 }

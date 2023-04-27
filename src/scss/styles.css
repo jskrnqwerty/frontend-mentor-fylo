@@ -288,6 +288,40 @@
   margin-left: 0.8em;
   margin-right: 0.8em;
 }
+@media screen and (max-width: 765px) {
+  .footer_logo {
+    width: 45vw;
+  }
+  .footer_info {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .footer_info .icon {
+    height: 2.1rem;
+    margin-right: 4em;
+  }
+  .footer_info .text {
+    font-size: 1.95rem;
+    line-height: 2.5rem;
+  }
+  .footer_info_address {
+    max-width: 100%;
+  }
+  .footer_info_contact_phone {
+    padding-bottom: 2em;
+  }
+  .footer_info_quick-links-1 ul, .footer_info_quick-links-2 ul {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .footer_info_social-icons {
+    align-self: center;
+  }
+  .footer_info_social-icons img {
+    width: 60px;
+  }
+}
 
 .header {
   background-color: hsl(217, 28%, 15%);
