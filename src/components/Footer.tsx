@@ -1,4 +1,17 @@
+import React, { useState } from "react";
+import IconTwitter from "../assets/icons-components/IconTwitter";
+import IconInstagram from "../assets/icons-components/IconInstagram";
+import IconFacebook from "../assets/icons-components/IconFacebook";
+
 const Footer = () => {
+  const defaultColor = "hsl(0, 0%, 100%)";
+  const hoverColor = "hsl(176, 68%, 64%)";
+  const iconWidth = "2.5em";
+
+  const [isFacebookHover, setIsFacebookHover] = useState(false);
+  const [isTwitterHover, setIsTwitterHover] = useState(false);
+  const [isInstagramHover, setIsInstagramHover] = useState(false);
+
   const quickLinks1 = [
     { name: "About Us", link: "/" },
     { name: "Jobs", link: "/" },
@@ -10,6 +23,7 @@ const Footer = () => {
     { name: "Terms", link: "/" },
     { name: "Privacy", link: "/" },
   ];
+
   return (
     <>
       <img
@@ -54,10 +68,6 @@ const Footer = () => {
                 <a href={item.link}>{item.name}</a>
               </li>
             ))}
-            {/* <p>About Us</p>
-            <p>Jobs</p>
-            <p>Press</p>
-          <p>Blog</p> */}
           </ul>
         </div>
         <div className="footer_info_quick-links-2">
@@ -68,26 +78,53 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          {/* <p>Contact Us</p>
-          <p>Terms</p>
-          <p>Privacy</p> */}
         </div>
         <div className="footer_info_social-icons">
-          <img
-            src="src\assets\images\icon-facebook.svg"
-            alt="facebook-icon"
+          <a
+            href="https://www.facebook.com"
             className="facebook-icon"
-          />
-          <img
-            src="src\assets\images\icon-twitter.svg"
-            alt="twitter-icon"
+            onMouseOver={() => setIsFacebookHover(true)}
+            onMouseLeave={() => {
+              setIsFacebookHover(false);
+            }}
+          >
+            <IconFacebook
+              color={isFacebookHover ? hoverColor : defaultColor}
+              width={iconWidth}
+            />
+          </a>
+
+          <a
+            href="https://www.twitter.com"
             className="twitter-icon"
-          />
-          <img
-            src="src\assets\images\icon-instagram.svg"
-            alt="instagram-icon"
+            onMouseOver={() => {
+              setIsTwitterHover(true);
+            }}
+            onMouseLeave={() => {
+              setIsTwitterHover(false);
+            }}
+          >
+            <IconTwitter
+              color={isTwitterHover ? hoverColor : defaultColor}
+              width={iconWidth}
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com"
             className="instagram-icon"
-          />
+            onMouseOver={() => {
+              setIsInstagramHover(true);
+            }}
+            onMouseLeave={() => {
+              setIsInstagramHover(false);
+            }}
+          >
+            <IconInstagram
+              color={isInstagramHover ? hoverColor : defaultColor}
+              width={iconWidth}
+            />
+          </a>
         </div>
       </div>
     </>

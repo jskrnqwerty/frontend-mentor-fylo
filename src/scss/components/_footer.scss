@@ -78,15 +78,28 @@
     }
 
     &_social-icons {
-
-      img {
-        width: 30px;
-      }
+      // display: flex;
+      // gap: 0.5em;
       
-      .twitter-icon {
-        margin-left: 0.8em;
-        margin-right: 0.8em;
+
+      a {
+        // width: 100px;
+        // margin-left: 0.5em;
+        .facebook-icon {
+          IconFacebook { color: "#000"}
+        }
       }
+      // a {
+      //   width: 30px;
+        
+      //   IconTwitter {
+      //     color: red;
+      //   }
+        
+        .twitter-icon {
+          margin: 0 0.5em;
+        }
+      // }
     }
   }
 
@@ -176,10 +189,12 @@
       }
   
       &_social-icons {
-        align-self: center;
+        display: inline-flex;
+        // align-self: center;
   
-        img {
-          width: calc(30px * 2);
+        a {
+          // display: flex;
+          // width: calc(30px * 2);
         }
         
         .twitter-icon {

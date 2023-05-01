@@ -281,12 +281,11 @@
   font-weight: 700;
   cursor: pointer;
 }
-.footer_info_social-icons img {
-  width: 30px;
+.footer_info_social-icons a .facebook-icon IconFacebook {
+  color: "#000";
 }
 .footer_info_social-icons .twitter-icon {
-  margin-left: 0.8em;
-  margin-right: 0.8em;
+  margin: 0 0.5em;
 }
 @media screen and (max-width: 765px) {
   .footer_logo {
@@ -316,10 +315,7 @@
     line-height: 2.5rem;
   }
   .footer_info_social-icons {
-    align-self: center;
-  }
-  .footer_info_social-icons img {
-    width: 60px;
+    display: inline-flex;
   }
 }
 

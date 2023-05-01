@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const EarlyAccess = () => {
+  const [isEmailValid, setIsEmailValid] = useState(true);
+
   return (
     <>
       <div className="early-access">
@@ -14,11 +18,16 @@ const EarlyAccess = () => {
               placeholder="email@example.com"
               className="early-access_form_input_field"
             ></input>
-            <p className="early-access_form_input_error">
-              Please enter a valid email address
-            </p>
+            {!isEmailValid && (
+              <p className="early-access_form_input_error">
+                Please enter a valid email address
+              </p>
+            )}
           </div>
-          <button className="early-access_form_button">
+          <button
+            className="early-access_form_button"
+            // onClick={}
+          >
             Get Started For Free
           </button>
         </form>
