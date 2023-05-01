@@ -30,7 +30,7 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-      {/* <footer>
+      <footer>
         <p className="attribution">
           Challenge by{" "}
           <a
@@ -39,9 +39,9 @@ function App() {
           >
             Frontend Mentor
           </a>
-          . Coded by <a href="#">Jaskaran</a>.
+          . Coded by <a href="https://github.com/jskrnqwerty">jskrnqwerty</a>.
         </p>
-      </footer> */}
+      </footer>
     </>
   );
 }

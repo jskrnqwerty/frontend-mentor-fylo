@@ -1,7 +1,31 @@
 import { useState } from "react";
 
 const EarlyAccess = () => {
-  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  const [inputEmail, setInputEmail] = useState<string>("");
+  const emailRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value;
+    setInputEmail(inputValue);
+  };
+
+  const validateEmail = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    console.log("Email address entered:", inputEmail);
+
+    const validEmail = inputEmail.match(emailRegex);
+
+    if (validEmail) {
+      setIsEmailValid(true);
+      setInputEmail("");
+    } else {
+      setIsEmailValid(false);
+    }
+  };
 
   return (
     <>
@@ -15,8 +39,13 @@ const EarlyAccess = () => {
         <form className="early-access_form">
           <div className="early-access_form_input">
             <input
+              type="email"
               placeholder="email@example.com"
+              value={inputEmail}
               className="early-access_form_input_field"
+              onChange={(e) => {
+                handleInput(e);
+              }}
             ></input>
             {!isEmailValid && (
               <p className="early-access_form_input_error">
@@ -26,7 +55,7 @@ const EarlyAccess = () => {
           </div>
           <button
             className="early-access_form_button"
-            // onClick={}
+            onClick={(e) => validateEmail(e)}
           >
             Get Started For Free
           </button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import IconTwitter from "../assets/icons-components/IconTwitter";
 import IconInstagram from "../assets/icons-components/IconInstagram";
 import IconFacebook from "../assets/icons-components/IconFacebook";
@@ -8,17 +8,18 @@ const Footer = () => {
   const hoverColor = "hsl(176, 68%, 64%)";
   const iconWidth = "2.5em";
 
-  const [isFacebookHover, setIsFacebookHover] = useState(false);
-  const [isTwitterHover, setIsTwitterHover] = useState(false);
-  const [isInstagramHover, setIsInstagramHover] = useState(false);
+  const [isFacebookHover, setIsFacebookHover] = useState<boolean>(false);
+  const [isTwitterHover, setIsTwitterHover] = useState<boolean>(false);
+  const [isInstagramHover, setIsInstagramHover] = useState<boolean>(false);
 
-  const quickLinks1 = [
+  type quickLinksType = { name: string; link: string };
+  const quickLinks1: quickLinksType[] = [
     { name: "About Us", link: "/" },
     { name: "Jobs", link: "/" },
     { name: "Press", link: "/" },
     { name: "Blog", link: "/" },
   ];
-  const quickLinks2 = [
+  const quickLinks2: quickLinksType[] = [
     { name: "Contact Us", link: "/" },
     { name: "Terms", link: "/" },
     { name: "Privacy", link: "/" },
@@ -81,7 +82,7 @@ const Footer = () => {
         </div>
         <div className="footer_info_social-icons">
           <a
-            href="https://www.facebook.com"
+            href="https://github.com/jskrnqwerty"
             className="facebook-icon"
             onMouseOver={() => setIsFacebookHover(true)}
             onMouseLeave={() => {
@@ -95,7 +96,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.twitter.com"
+            href="https://github.com/jskrnqwerty"
             className="twitter-icon"
             onMouseOver={() => {
               setIsTwitterHover(true);
@@ -111,7 +112,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.instagram.com"
+            href="https://github.com/jskrnqwerty"
             className="instagram-icon"
             onMouseOver={() => {
               setIsInstagramHover(true);

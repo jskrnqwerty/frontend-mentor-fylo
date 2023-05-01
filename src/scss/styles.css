@@ -511,4 +511,12 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  letter-spacing: 0.01rem;
+}
+footer a {
+  color: hsl(198, 60%, 50%);
 }/*# sourceMappingURL=styles.css.map */
