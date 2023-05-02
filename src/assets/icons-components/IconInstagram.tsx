@@ -1,6 +1,6 @@
-import React from "react";
+import { IconPropsType } from "../../types/types";
 
-const IconInstagram = ({ color, width }) => {
+const IconInstagram = ({ color, width }: IconPropsType) => {
   return (
     <svg
       viewBox="0 0 56.7 56.7"

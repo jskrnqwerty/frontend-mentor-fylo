@@ -1,6 +1,6 @@
-import React from "react";
+import { IconPropsType } from "../../types/types";
 
-const IconTwitter = ({ color, width }) => {
+const IconTwitter = ({ color, width }: IconPropsType) => {
   return (
     <svg
       viewBox="0 0 56.693 56.693"
