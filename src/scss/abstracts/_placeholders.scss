@@ -7,9 +7,13 @@
   font-size: 1rem;
   color: $text-color;
   background-color: $blue;
+  background-image: linear-gradient(to right, $cyan, $blue);
+  cursor: pointer;
 }
 %button-hover {
   background-color: $cyan;
+  background-image: linear-gradient(to right, $cyan, $cyan);
+  
 }
 
 %header-footer-padding {

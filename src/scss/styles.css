@@ -4,10 +4,13 @@
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(198, 60%, 50%);
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  cursor: pointer;
 }
 
 .intro_get-started:hover, .early-access-block .early-access_form_button:hover {
   background-color: hsl(176, 68%, 64%);
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
 }
 
 .header, .footer {
@@ -108,7 +111,7 @@
 
 .explanation {
   display: grid;
-  grid-template-columns: repeat(2, 25%);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   max-width: 95vw;
@@ -119,16 +122,15 @@
   justify-self: right;
 }
 .explanation_image_img {
-  max-width: 90vw;
+  max-width: 600px;
   width: calc(20vw + 300px);
 }
 .explanation_info {
-  padding-left: calc(1vw + 2em);
   display: flex;
   flex-direction: column;
+  padding-left: calc(3vw + 10px);
   text-align: left;
-  max-width: calc(20vw + 300px);
-  width: calc(20vw + 300px - 1vw);
+  max-width: calc(20vw + 300px - 3vw);
 }
 .explanation_info_heading {
   max-width: 20rem;
@@ -136,6 +138,7 @@
 }
 .explanation_info_text {
   margin: 0.7rem 0;
+  font-size: 1rem;
 }
 .explanation_info_how-fylo-works {
   text-decoration: none;
@@ -439,9 +442,11 @@
 }
 
 .testimonials {
-  max-width: calc(70vw + 150px);
+  max-width: 90vw;
+  width: calc(20vw + 800px);
   margin: auto;
   display: flex;
+  justify-content: center;
   gap: 3em;
   text-align: left;
   position: relative;

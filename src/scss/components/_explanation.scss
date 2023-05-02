@@ -1,12 +1,13 @@
 @use "../abstracts/" as *;
 
-$grid-item-width: 90vw;
+// $grid-item-width: 90vw;
 $grid-content-width: calc(20vw + 300px);
 $explanation-text-size: $text-size-8 + 0.15rem;
 
 .explanation {
   display: grid;
-  grid-template-columns: repeat(2, calc(25%));
+  // grid-template-columns: repeat(2, calc(25%));
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   max-width: 95vw;
@@ -17,18 +18,18 @@ $explanation-text-size: $text-size-8 + 0.15rem;
     justify-self: right;
 
     &_img {
-      max-width: $grid-item-width;
+      max-width: 600px;
       width: $grid-content-width;
     }
   }
 
   &_info {
-    padding-left: calc(1vw + 2em);
     display: flex;
     flex-direction: column;
+    padding-left: calc(3vw + 10px);
     text-align: left;
-    max-width: $grid-content-width;
-    width: calc($grid-content-width - 1vw);
+    max-width: calc($grid-content-width - 3vw);
+    // width: $grid-content-width;
 
     &_heading {
       max-width: 20rem;
@@ -38,6 +39,7 @@ $explanation-text-size: $text-size-8 + 0.15rem;
     &_text {
       @extend %medium-text;
       margin: 0.7rem 0;
+      font-size: 1rem;
     }
 
     &_how-fylo-works {
