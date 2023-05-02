@@ -78,24 +78,23 @@
     }
 
     &_social-icons {
-      // display: flex;
-      // gap: 0.5em;
-      
 
-      a {
-        // width: 100px;
-        // margin-left: 0.5em;
-        .facebook-icon {
-          IconFacebook { color: "#000"}
-        }
+        .twitter-icon {
+          margin: 0 0.5em;
       }
-      // a {
-      //   width: 30px;
-        
-      //   IconTwitter {
-      //     color: red;
-      //   }
-        
+    }
+
+    &_social-icons-mobile {
+      display: none;
+
+          svg {
+            width: 2.5em;
+            fill: $text-color;
+          }
+          svg:hover {
+            fill: $cyan;
+          }
+
         .twitter-icon {
           margin: 0 0.5em;
         }
@@ -104,42 +103,30 @@
   }
 
   @media screen and (max-width: $mobile-screen) {
-    // @extend %header-footer-padding;
-    // background-color: $footer-bg;
-    // text-align: left;
   
     &_logo {
       width: 45vw;
-      // margin-bottom: 2em;
-  
     }
+
     &_info {
       display: inline-flex;
       flex-direction: column;
       gap: 3em;
-      // justify-content: space-between;
   
       %footer-item-margin {
-        // margin-bottom: 1em;
       }
   
       .icon {
         height: 2.1rem;
-        // float: left;
         margin-right: 4em;
-        // align-self: start;
-        // margin-top: 0.2rem;
       }
   
       .text {
-        // display: inline;
-        // @extend %medium-text;
         font-size: calc($mobile-text-size + 0.2rem);
         line-height: $mobile-text-line-height ;
       }
   
       &_address {
-        // display: flex;
         max-width: 100%;
         .icon {
         }
@@ -151,7 +138,6 @@
   
         &_phone {
           padding-bottom: 2em;
-          // @extend %footer-item-margin;
           .icon {
           }
           .text {
@@ -170,39 +156,37 @@
         ul {
           font-size: $mobile-text-size;
           line-height: $mobile-text-line-height;
-          // @extend %medium-text;
-          // list-style: none;
-          // text-align: left;
           li {
-            // @extend %footer-item-margin;
   
             a {
-              // text-decoration: none;
-              // color: $text-color;
             }
-          }
-          li:hover {
-            // font-weight: 700;
-            // cursor: pointer;
           }
         }
       }
   
       &_social-icons {
-        display: inline-flex;
-        // align-self: center;
-  
+        display: none;
+        align-self: center;
+        
         a {
-          // display: flex;
-          // width: calc(30px * 2);
         }
         
         .twitter-icon {
-          // margin-left: 0.8em;
-          // margin-right: 0.8em;
         }
       }
-    }  
+      
+      &_social-icons-mobile {
+        display: flex;
+        align-self: center;
 
+        svg {
+          width: 4em;
+        }
+      
+        .twitter-icon {
+          margin: 0 1em;
+        }
+      }
+    }
   }
 }

@@ -35,32 +35,15 @@
   }
   
   @media screen and (max-width: $mobile-screen) {
-    // background-color: grey;
-    // padding-left: 3em;
-    // padding-right: 3em;
+
     &_logo {
-      // margin-right: 1.5em;
-      // max-width: 180px;
-      // min-width: 150px;
-      // width: calc(5vw + 100px);
       }
     
     &_nav-menu {
-    // display: flex;
     gap: calc(7vw + 0.1rem);
-    // justify-content: space-between;
     
       &_item {
         font-size: $menu-text-size + 0.5rem;
-        // font-family: $fancy-font;
-        // color: $text-color;
-        // text-decoration: none;
-      }
-    
-      &_item:hover {
-        // text-decoration: underline;
-        // font-weight: 700;
-        // cursor: pointer;
       }
     }
   }

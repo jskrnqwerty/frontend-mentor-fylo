@@ -36,7 +36,7 @@ $explanation-text-size: $text-size-8 + 0.15rem;
     }
     
     &_text {
-      @extend %medium-text;      
+      @extend %medium-text;
       margin: 0.7rem 0;
     }
 
@@ -46,7 +46,6 @@ $explanation-text-size: $text-size-8 + 0.15rem;
 
       &_text {
         display: inline-flex;
-        flex-direction: row;
         align-items: center;
         color: $cyan;
         text-decoration: none;
@@ -62,12 +61,33 @@ $explanation-text-size: $text-size-8 + 0.15rem;
     }
   }
 
-  @media screen and (max-width: 1039px) {
+  @media screen and (max-width: 1039px) and (min-width: calc($mobile-screen - 1px)) {
+    .explanation {
+
+      &_image {
+
+        &_img {
+          width: calc($grid-content-width - 100px);
+        }
+      }
+    
+      &_info {
+    
+        &_heading {
+        }
+        
+        &_text {
+          max-width: 40vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-screen) {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
     margin-bottom: calc($block-bottom-margin + 11em);
-
 
     &_image {
       margin-bottom: 7em;
@@ -75,9 +95,10 @@ $explanation-text-size: $text-size-8 + 0.15rem;
 
       &_img {
         max-width: 600px;
-        width: $mobile-max-width;
+        width: calc($mobile-max-width + 800px);
       }
     }
+
     &_info {
       padding-left: calc(1vw + 0.25em);
       max-width: 100%;
@@ -89,8 +110,6 @@ $explanation-text-size: $text-size-8 + 0.15rem;
       }
 
       &_text {
-        // font-size: $mobile-text-size;
-        // margin: 0.7rem 0;
         font-size: $mobile-text-size;
         line-height: 2.5rem;
         line-height: $mobile-text-line-height;
@@ -101,7 +120,6 @@ $explanation-text-size: $text-size-8 + 0.15rem;
         &_text {
           font-size: $mobile-text-size - 0.3rem;
           padding-bottom: 0.7em;
-
           
           &_arrow-icon {
             width: $mobile-text-size;

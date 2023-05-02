@@ -2,7 +2,7 @@
 
 
 .testimonials {
-  max-width: calc($max-width-vw - 150px);
+  max-width: calc(70vw + 150px);
   margin: auto;
   display: flex;
   gap: 3em;
@@ -57,32 +57,19 @@
   @media screen and (max-width: $mobile-screen) {
     flex-direction: column;
     max-width: calc($max-width-vw - 130px);
-    // margin: auto;
-    // display: flex;
-    // gap: 3em;
-    // text-align: left;
-    // position: relative;  
     margin-bottom: calc($block-bottom-margin + 10em);
   
     &_quotes-icon {
-      // position: absolute;
-      // z-index: 1;
       width: 45px;
       top: -35px;
       left: 10px;
     }
   
     &_card {
-      // z-index: 2;
-      // background-color: $testimonial-bg;
       padding: 3em 3.1em;
-      // border-radius: 7px;
-      // box-shadow: 5px 5px 10px 1px $intro-bg;
   
       &_statement {
-        // margin-bottom: 2rem;
         font-size: $text-size-8 + 0.3rem;
-        // letter-spacing: 0.05rem;
         line-height: $mobile-text-line-height;
       }
       
@@ -90,23 +77,16 @@
         
         &_photo {
           width: 3.5em;
-          // float: left;
-          // margin-right: 0.6em;
-          // border-radius: 50%;
         }
         
         &_name {
-          // font-weight: 700;
           padding-bottom: 0.5rem;
           font-size: $text-size-8 + 0.3rem;
-          // font-size: 0.65rem;
           letter-spacing: 0.1rem;
         }
         
         &_designation {
           font-size: 0.9rem;
-          // font-size: 0.5rem;
-          // letter-spacing: 0.05rem;
         }
       }
     }

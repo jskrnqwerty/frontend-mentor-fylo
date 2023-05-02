@@ -72,7 +72,7 @@
   padding-left: 2rem;
   font-size: 0.9rem;
 }
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 765px) {
   .early-access-block .early-access {
     width: 90vw;
     padding: 5em 0;
@@ -143,7 +143,6 @@
 }
 .explanation_info_how-fylo-works_text {
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
   color: hsl(176, 68%, 64%);
   text-decoration: none;
@@ -155,7 +154,15 @@
   margin-left: 0.5rem;
   margin-top: 0.1rem;
 }
-@media screen and (max-width: 1039px) {
+@media screen and (max-width: 1039px) and (min-width: 764px) {
+  .explanation .explanation_image_img {
+    width: calc(20vw + 300px - 100px);
+  }
+  .explanation .explanation_info_text {
+    max-width: 40vw;
+  }
+}
+@media screen and (max-width: 765px) {
   .explanation {
     display: flex;
     flex-direction: column;
@@ -168,7 +175,7 @@
   }
   .explanation_image_img {
     max-width: 600px;
-    width: 80vw;
+    width: calc(80vw + 800px);
   }
   .explanation_info {
     padding-left: calc(1vw + 0.25em);
@@ -281,10 +288,20 @@
   font-weight: 700;
   cursor: pointer;
 }
-.footer_info_social-icons a .facebook-icon IconFacebook {
-  color: "#000";
-}
 .footer_info_social-icons .twitter-icon {
+  margin: 0 0.5em;
+}
+.footer_info_social-icons-mobile {
+  display: none;
+}
+.footer_info_social-icons-mobile svg {
+  width: 2.5em;
+  fill: hsl(0, 0%, 100%);
+}
+.footer_info_social-icons-mobile svg:hover {
+  fill: hsl(176, 68%, 64%);
+}
+.footer_info_social-icons-mobile .twitter-icon {
   margin: 0 0.5em;
 }
 @media screen and (max-width: 765px) {
@@ -315,7 +332,18 @@
     line-height: 2.5rem;
   }
   .footer_info_social-icons {
-    display: inline-flex;
+    display: none;
+    align-self: center;
+  }
+  .footer_info_social-icons-mobile {
+    display: flex;
+    align-self: center;
+  }
+  .footer_info_social-icons-mobile svg {
+    width: 4em;
+  }
+  .footer_info_social-icons-mobile .twitter-icon {
+    margin: 0 1em;
   }
 }
 
@@ -411,7 +439,7 @@
 }
 
 .testimonials {
-  max-width: calc(90vw - 150px);
+  max-width: calc(70vw + 150px);
   margin: auto;
   display: flex;
   gap: 3em;
