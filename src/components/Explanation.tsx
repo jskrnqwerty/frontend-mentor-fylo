@@ -4,6 +4,7 @@ const Explanation = () => {
       <div className="explanation_image">
         <img
           src="src/assets/images/illustration-stay-productive.png"
+          // src="../assets/images/illustration-stay-productive.png"
           alt="illustration-stay-productive"
           className="explanation_image_img"
         />
@@ -28,7 +29,7 @@ const Explanation = () => {
           >
             See how Fylo works
             <img
-              src="src\assets\images\icon-arrow.svg"
+              src="src/assets/images/icon-arrow.svg"
               alt="arrow-icon"
               className="explanation_info_how-fylo-works_text_arrow-icon"
             />
