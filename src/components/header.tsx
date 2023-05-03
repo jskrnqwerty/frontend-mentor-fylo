@@ -8,9 +8,10 @@ const Header = () => {
 
   return (
     <>
-      <a href="/">
+      <a href="#">
         <img
-          src="src/assets/images/logo.svg"
+          // src="src/assets/images/logo.svg"
+          src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/logo.svg"
           alt="logo"
           className="header_logo"
         />

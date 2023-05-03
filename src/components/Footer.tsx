@@ -14,28 +14,30 @@ const Footer = () => {
 
   type quickLinksType = { name: string; link: string };
   const quickLinks1: quickLinksType[] = [
-    { name: "About Us", link: "/" },
-    { name: "Jobs", link: "/" },
-    { name: "Press", link: "/" },
-    { name: "Blog", link: "/" },
+    { name: "About Us", link: "#" },
+    { name: "Jobs", link: "#" },
+    { name: "Press", link: "#" },
+    { name: "Blog", link: "#" },
   ];
   const quickLinks2: quickLinksType[] = [
-    { name: "Contact Us", link: "/" },
-    { name: "Terms", link: "/" },
-    { name: "Privacy", link: "/" },
+    { name: "Contact Us", link: "#" },
+    { name: "Terms", link: "#" },
+    { name: "Privacy", link: "#" },
   ];
 
   return (
     <>
       <img
-        src="src\assets\images\logo.svg"
+        // src="src\assets\images\logo.svg"
+        src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/logo.svg"
         alt="Fylo logo"
         className="footer_logo"
       />
       <div className="footer_info">
         <div className="footer_info_address">
           <img
-            src="src/assets/images/icon-location.svg"
+            // src="src/assets/images/icon-location.svg"
+            src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/icon-location.svg"
             alt="location-icon"
             className="icon"
           />
@@ -47,7 +49,8 @@ const Footer = () => {
         <div className="footer_info_contact">
           <div className="footer_info_contact_phone">
             <img
-              src="src/assets/images/icon-phone.svg"
+              // src="src/assets/images/icon-phone.svg"
+              src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/icon-phone.svg"
               alt="location-icon"
               className="icon"
             />
@@ -55,7 +58,8 @@ const Footer = () => {
           </div>
           <div className="footer_info_contact_email">
             <img
-              src="src/assets/images/icon-email.svg"
+              // src="src/assets/images/icon-email.svg"
+              src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/icon-email.svg"
               alt="location-icon"
               className="icon"
             />

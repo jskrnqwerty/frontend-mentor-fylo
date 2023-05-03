@@ -9,21 +9,27 @@ const Testimonials = () => {
     {
       name: "Satish Patel",
       designation: "Founder & CEO, Huddle",
-      profilePhoto: "src/assets/images/profile-1.jpg",
+      // profilePhoto: "src/assets/images/profile-1.jpg",
+      profilePhoto:
+        "https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/master/src/assets/images/profile-1.jpg",
       statement:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
     },
     {
       name: "Bruce McKenzie",
       designation: "Founder & CEO, Huddle",
-      profilePhoto: "src/assets/images/profile-2.jpg",
+      // profilePhoto: "src/assets/images/profile-2.jpg",
+      profilePhoto:
+        "https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/master/src/assets/images/profile-2.jpg",
       statement:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
     },
     {
       name: "Iva Boyd",
       designation: "Founder & CEO, Huddle",
-      profilePhoto: "src/assets/images/profile-3.jpg",
+      // profilePhoto: "src/assets/images/profile-3.jpg",
+      profilePhoto:
+        "https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/master/src/assets/images/profile-3.jpg",
       statement:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
     },
@@ -32,7 +38,8 @@ const Testimonials = () => {
   return (
     <>
       <img
-        src="src\assets\images\bg-quotes.png"
+        // src="src\assets\images\bg-quotes.png"
+        src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/master/src/assets/images/bg-quotes.png"
         alt="quotes-icon"
         className="testimonials_quotes-icon"
       />

@@ -3,8 +3,8 @@ const Explanation = () => {
     <>
       <div className="explanation_image">
         <img
-          src="src/assets/images/illustration-stay-productive.png"
-          // src="../assets/images/illustration-stay-productive.png"
+          // src="src/assets/images/illustration-stay-productive.png"
+          src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/master/src/assets/images/illustration-stay-productive.png"
           alt="illustration-stay-productive"
           className="explanation_image_img"
         />
@@ -24,12 +24,13 @@ const Explanation = () => {
         </p>
         <div className="explanation_info_how-fylo-works">
           <a
-            href="/"
+            href="#"
             className="explanation_info_how-fylo-works_text"
           >
             See how Fylo works
             <img
-              src="src/assets/images/icon-arrow.svg"
+              // src="src/assets/images/icon-arrow.svg"
+              src="https://raw.githubusercontent.com/jskrnqwerty/frontend-mentor-fylo/6a7b0c1f54d8fe1bdde603b3aaa9eb9720e3309b/src/assets/images/icon-arrow.svg"
               alt="arrow-icon"
               className="explanation_info_how-fylo-works_text_arrow-icon"
             />
